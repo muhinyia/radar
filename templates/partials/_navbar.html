@@ -1,0 +1,74 @@
+{%load static%}
+<!--Navbar-->
+
+<nav
+  class="navbar navbar-expand-md navbar-dark bg-primary sticky-top"
+  id="main-nav"
+>
+  <div class="container-fluid">
+    <a href="{%url 'pages:index'%}" class="navbar-brand">
+      <img
+        src="{%static 'img/logo.jpg'%}"
+        width="200"
+        height="80"
+        alt="Radarfine Consultants"
+      />
+     </h3>
+    </a>
+    <button
+      class="navbar-toggler"
+      data-toggle="collapse"
+      data-target="#navbarCollapse"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav">
+        <li 
+        {% if "/" == request.path%}
+                  class="nav-item active mr-3"
+                  {%else%}
+        class="nav-item mr-3"
+        {%endif%}
+        >
+          
+          <a href="{%url 'pages:index'%}" class="nav-link">
+            <i class="fas fa-home"></i> Home</a
+          >
+        </li>
+        <li 
+        {% if "about" in request.path%}
+                  class="nav-item active mr-3"
+                  {%else%}
+        class="nav-item mr-3"
+        {%endif%}
+        >
+          <a href="{%url 'pages:about'%}" class="nav-link"> <i class="fas fa-users"></i> About Us</a>
+        </li>
+         <li 
+        {% if "services" in request.path%}
+                  class="nav-item active mr-3"
+                  {%else%}
+        class="nav-item mr-3"
+        {%endif%}
+        >
+          <a href="{%url 'pages:services'%}" class="nav-link"> <i class="fas fa-book"></i> Our Services</a>
+        </li>
+
+         <li 
+        {% if "contact" in request.path%}
+                  class="nav-item active mr-3"
+                  {%else%}
+        class="nav-item mr-3"
+        {%endif%}
+        >
+          <a href="{%url 'pages:contact'%}" class="nav-link">
+            <i class="fas fa-phone"></i> Contact Us</a
+          >
+        </li>
+      </ul>
+
+      
+    </div>
+  </div>
+</nav>

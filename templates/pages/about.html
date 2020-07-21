@@ -1,0 +1,443 @@
+{%extends 'base.html'%}
+<!--static-->
+{%load static%}
+<!--title-->
+{%block title%}|Home{%endblock%}
+<!--content block-->
+{%block content%}
+
+<!-- Breadcrumb -->
+<section id="bc" class="mt-3">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="{%url 'pages:index'%}"> <i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="breadcrumb-item active">About US</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+<!-- PAGE HEADER -->
+<header id="page-header">
+  <div class="container">
+    <div class="row">
+      <div class="col m-auto text-center">
+        <h1 class="text-danger">About Us</h1>
+        <h4 class="text-info">
+          <blockquote>
+            "GIVING WAY TO YOUR DREAMS"
+          </blockquote>
+        </h4>
+        <p class="lead">
+          To excel beyond excellence in the felds is the objective we aim at.
+        </p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="py-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        <h1 class="text-secondary">What is Radarfine Consultants?</h1>
+        <p class="lead">
+          For us Radarfine consultants means high level of professionalism,
+          state of the art training, consulting and coaching services dedicated
+          to the management of the client companies in bundled with a easy
+          intimate style.
+        </p>
+        <p class="lead">
+          A team of creative and professional strategists, Radarfine Consultants
+          is now evolving into one of the leading Creative Solution providers
+          across the country. Magnifying the brands and transforming the
+          branding communications into technological effcacy are the missions we
+          undertake - To excel beyond excellence in the felds is the objective
+          we aim at.
+        </p>
+      </div>
+      <div class="col-md-4">
+        <img
+          src="{%static 'img/meeting1.jpg'%}"
+          alt=""
+          class="meeting1"
+          height="300px"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+<!--Strenghts-->
+<section id="about" class="py-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <h1 class="text-success">Our Strengths</h1>
+        <div class="text-primary">
+          <p>
+            <i class="fas fa-award fa-2x"></i> Dedicated and Experienced Staff
+          </p>
+
+          <p><i class="fas fa-credit-card fa-2x"></i> Competitive Pricing</p>
+          <p>
+            <i class="fas fa-folder fa-2x"></i> Excellency in Providing High
+            Quality Services
+          </p>
+          <p>
+            <i class="fas fa-pen fa-2x"></i> Professional Quality Services on
+            Time and on Budget
+          </p>
+          <p>
+            <i class="fas fa-cog fa-2x"></i> Strategic Alliances with Suppliers
+            and Manufacturers
+          </p>
+          <p>
+            <i class="fas fa-laptop fa-2x"></i> Developing Visibility to
+            Generate New Business
+          </p>
+          <p>
+            <i class="fas fa-users fa-2x"></i> Follow-up Strategy to Gauge our
+            Performance With Clients
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <img
+          src="{%static 'img/meeting5.jpg'%}"
+          alt=""
+          class="meeting1"
+          height="400px"
+          width="600px"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+<!--Vision -->
+<section id="vision" class="mb-2 bg-primary text-white">
+  <div class="container">
+    <h1 class="text-center text-success">Vision:</h1>
+    <div class="row text-center">
+      <div class="col">
+        <div class="slider">
+          <div>
+            <blockquote class="blockquote">
+              <p class="bold display-4">
+                To be a Creative Company For Excellence
+              </p>
+              <footer class="small lead">
+                To be the best among the rest, we strive for excellence in what
+                we do making use of brand-new gen and in-built creativity, we
+                proudly possess. We love to see the world recognize our
+                signature in every concept we provide.
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--mission -->
+<section id="vision" class="mb-2 bg-info text-white">
+  <div class="container">
+    <h1 class="text-center text-primary">Mission:</h1>
+    <div class="row text-center">
+      <div class="col">
+        <div class="slider">
+          <div>
+            <blockquote class="blockquote">
+              <p class="mb-0 bold display-4">
+                To Magnify Brands
+              </p>
+              <footer class="small lead">
+                We define and design brand image as the unified whole of the
+                client and this determines their existence and survival in the
+                global market. Translating the verbal plans and brainstorm ideas
+                into market - defining solutions and empowering them to compete
+                with their large counterparts.
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Values -->
+
+<section id="about" class="py-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <h1 class="text-success">Values</h1>
+        <div class="text-primary">
+          <p><i class="fas fa-pen fa-2x"></i> Efficiency</p>
+
+          <p><i class="fas fa-pen fa-2x"></i> Trustworthiness</p>
+          <p><i class="fas fa-pen fa-2x"></i> Hands-on approach</p>
+          <p><i class="fas fa-pen fa-2x"></i> Integrity</p>
+          <p><i class="fas fa-pen fa-2x"></i> Credibility</p>
+          <p><i class="fas fa-pen fa-2x"></i> Social Responsibility</p>
+        </div>
+      </div>
+      <div class="col-sm-8">
+        <img
+          src="{%static 'img/charity.jpg'%}"
+          alt=""
+          class="meeting1"
+          height="300px"
+          width="600px"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--competencies -->
+
+<section id="about" class="py-3">
+  <div class="container bg-primary">
+    <div class="row">
+      <div class="col">
+        <h1 class="text-success text-center">Competencies</h1>
+        <div class="text-white">
+          <div class="row">
+            <div class="col-sm-3">
+            <p><i class="fas fa-pen fa-2x"></i> Strategic management</p>
+            </div>
+            <div class="col-sm-3">
+            <p><i class="fas fa-pen fa-2x"></i> Operational management</p>
+            </div>
+            <div class="col-sm-3">
+            <p><i class="fas fa-pen fa-2x"></i> Motivation</p>
+            </div>
+            <div class="col-sm-3">
+            <p><i class="fas fa-pen fa-2x"></i> Organization development</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+            <p><i class="fas fa-pen fa-2x"></i> Business development</p>
+            </div>
+            <div class="col-sm-3">
+            <p><i class="fas fa-pen fa-2x"></i> Leadership development</p>
+            </div>
+            <div class="col-sm-3">
+            <p><i class="fas fa-pen fa-2x"></i> Trading methodology</p>
+            </div>
+            <div class="col-sm-3">
+            <p><i class="fas fa-pen fa-2x"></i> B2B Complex sales</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+            <p><i class="fas fa-pen fa-2x"></i> ICT industry experience</p>
+            </div>
+            <div class="col-sm-3">
+            <p><i class="fas fa-pen fa-2x"></i> Project management</p>
+            <p>
+                </div>
+                <div class="col-sm-3">
+              <i class="fas fa-pen fa-2x"></i> Cost management 
+            </p>
+            </div>
+            <div class="col-sm-3">
+                <i class="fas fa-pen fa-2x"></i>
+                Decision supporting
+                </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+            <p><i class="fas fa-pen fa-2x"></i> Communication</p>
+            </div>
+            <div class="col-sm-3">
+            <p><i class="fas fa-pen fa-2x"></i> Conflict management</p>
+            </div>
+            <div class="col-sm-3">
+            <p><i class="fas fa-pen fa-2x"></i> Stress management</p>
+            </div>
+         <div class="col-sm-3">
+            <p>
+              <i class="fas fa-pen fa-2x"></i> Improvement of internal
+              collaboration
+            </p>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-sm-3">
+            <p><i class="fas fa-pen fa-2x"></i> Efficiency</p>
+            </div>
+            <div class="col-sm-3">
+            <p><i class="fas fa-pen fa-2x"></i> Process-based operation</p>
+            </div>
+            <div class="col-sm-3">
+            <p><i class="fas fa-pen fa-2x"></i> M&A advisory</p>
+            </div>
+            <div class="col-sm-3">
+            <p><i class="fas fa-pen fa-2x"></i> Fund-raising Capacity</p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-secondary text-center">Attitude</h1>
+                <p class="lead">
+                Our services are based on industry awareness.
+                We do believe that the knowledge of the market
+                and synthesized experience is as important as the
+                theoretical knowledge in the management
+                sciences. Therefore in every case, we transfer our
+                knowledge filtered by personal experiences.
+                </p>
+                <p class="lead">
+                    We maintain partnerships with our customers.
+                    We seek for long-term relationships, which are
+                    based on the partners strategy in every case.
+                </p>
+                <p class="lead">
+                    Acting as a trainer, as a consultant and a coach
+                    or a facilitator we take part in the everyday use
+                    of our customers. We work together and develop
+                    together. We are the ones that guarantee the
+                    necessary, wide spectrum of the added value,
+                    which is needed for an outstanding success story.
+                </p>
+                <p class="lead">
+                We combine the modern, dynamic style and the
+                professionalism. All of this is originated from our
+                behavior and from our (mostly) ICT industrial
+                socilization.
+                </p>
+                <p class="lead display-4 text-info">
+                    Our creativity and diversity is associated with efficiency and results.
+                </p>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="p-4 bg-dark text-white">
+  <div class="container">
+    <h2 class="text-center">Testimonials</h2>
+    <div class="row text-center">
+      <div class="col">
+        <div class="slider">
+          <div>
+            <blockquote class="blockquote">
+              <p class="mb-0">
+                Best Consultant services
+              </p>
+              <footer class="blockquote-footer">
+                Kamau Njoroge From
+                <cite title="Company 1">Company 1</cite>
+              </footer>
+            </blockquote>
+          </div>
+          <div>
+            <blockquote class="blockquote">
+              <p class="mb-0">
+                Radarfine helped me a great deal in scaling my Business
+              </p>
+              <footer class="blockquote-footer">
+                Tom Omondi From
+                <cite title="Company 2">Company 2</cite>
+              </footer>
+            </blockquote>
+          </div>
+          <div>
+            <blockquote class="blockquote">
+              <p class="mb-0">
+                Radarfine is the place for all your branding needs.They are simply irresistible
+              </p>
+              <footer class="blockquote-footer">
+               John Ng'etich From
+                <cite title="Company 3">Company 3</cite>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section id="team" class="py-5">
+  <div class="container">
+    <h2 class="text-center">Meet The Team</h2>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <div class="card">
+          <img
+            src="{%static 'img/stanley4.jpg'%}"
+            width="200px"
+            alt=""
+            class="rounded-circle mb-3 m-auto"
+          />
+          <h4>Florence Kamau</h4>
+          <p class="text-success">
+            <i class="fas fa-award text-success mb-3"></i> Lead Consultant
+          </p>
+          <hr />
+          <p><i class="fas fa-phone"></i> 0797813829</p>
+          <p><i class="fas fa-envelope-open"></i> florence@gmail.com</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img
+            src="{%static 'img/stanley2.jpg'%}"
+            width="200px"
+            alt=""
+            class="rounded-circle mb-5 m-auto"
+          />
+          <h4>John Mathenge</h4>
+          <p class="text-success mb-5">
+            <i class="fas fa-award text-success mb-3"></i> Consultant
+          </p>
+          <hr />
+          <p><i class="fas fa-phone mb-3"></i> 0797813829</p>
+          <p><i class="fas fa-envelope-open"></i> mathenge@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img
+            src="{%static 'img/stanley1.jpg'%}"
+            width="200px"
+            alt=""
+            class="rounded-circle mb-3 m-auto"
+          />
+          <h4>Stanley Ndung'u</h4>
+          <p class="text-success">
+            <i class="fas fa-award text-success mb-3"></i> Director
+          </p>
+          <hr />
+          <p><i class="fas fa-phone"></i> 0797813829</p>
+          <p><i class="fas fa-envelope-open"></i> stanley@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{%endblock%}

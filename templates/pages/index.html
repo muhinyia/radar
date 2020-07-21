@@ -1,0 +1,198 @@
+{%extends 'base.html'%}
+<!--static-->
+{%load static%}
+<!--title-->
+{%block title%}|Home{%endblock%}
+<!--content block-->
+{%block content%}
+<!--SHOWCASE-->
+<section id="showcase">
+  <div id="mycarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item carousel-image-1 active">
+        <div class="container">
+          <div class="carousel-caption text-left mb-5 text-danger">
+            <h1 class="display-3">Branding</h1>
+            <p class="lead"></p>
+            <a href="{%url 'pages:services'%}" class="btn btn-info btn-lg">
+              Learn More</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item carousel-image-2">
+        <div class="container">
+          <div class="carousel-caption text-left mb-5 text-danger">
+            <h1 class="display-3">Marketing</h1>
+            <p class="lead"></p>
+            <a href="{%url 'pages:services'%}" class="btn btn-primary btn-lg">
+              Learn More</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item carousel-image-3">
+        <div class="container">
+          <div class="carousel-caption text-left mb-5 text-danger">
+            <h1 class="display-3">Consultancy</h1>
+            <p class="lead"></p>
+            <a href="{%url 'pages:services'%}" class="btn btn-secondary btn-lg">
+              Learn More</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#mycarousel" class="carousel-control-prev" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a href="#mycarousel" class="carousel-control-next" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+</section>
+
+<!--HOME ICON SECTION  -->
+<div class="container-fluid mt-5">
+  <h1 class="text-center text-info" id="services">
+    Try Radarfine Consultants And Taste Greatness
+  </h1>
+  <section id="home-icons" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4 text-center">
+          <i class="fas fa-cog fa-3x mb-2 text-success"></i>
+          <h3 class="text-success">Branding</h3>
+          <p>
+            Regardless of how classic your business is if you don't brand your
+            products,they will remain in your warehouses.
+          </p>
+        </div>
+        <div class="col-md-4 mb-4 text-center">
+          <i class="fas fa-cloud fa-3x mb-2 text-info"></i>
+          <h3 class="text-info">Marketing</h3>
+          <p>
+            At Radarfine we understand that Marketing is the cream of any
+            organization while products.We thus don't leave anything to chance
+          </p>
+        </div>
+        <div class="col-md-4 mb-4 text-center">
+          <i class="fas fa-cart-plus fa-3x mb-2 text-secondary"></i>
+          <h3 class="text-secondary">Consultancy</h3>
+          <p>
+            Decision Making is a core aspect in business. We help you make
+            informed decisions for utmost Optimization.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="vision" class="mb-2 bg-primary text-white">
+    <div class="container">
+      <h1 class="text-center text-success">Vision:</h1>
+      <div class="row text-center">
+        <div class="col">
+          <div class="slider">
+            <div>
+              <blockquote class="blockquote">
+                <p class="bold display-4">
+                  To be a Creative Company For Excellence
+                </p>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--mission -->
+  <section id="vision" class="mb-2 bg-info text-white">
+    <div class="container">
+      <h1 class="text-center text-primary">Mission:</h1>
+      <div class="row text-center">
+        <div class="col">
+          <div class="slider">
+            <div>
+              <blockquote class="blockquote">
+                <p class="mb-0 bold display-4">
+                  To Magnify Brands
+                </p>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- CONTACT -->
+<section id="contact" class="bg-light py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-9">
+        <h3>Get In Touch</h3>
+        <p class="lead">Leave a Message, to help help Us serve you better</p>
+        <form action="." method="POST">
+          {%csrf_token%}
+          <div class="input-group input-group-lg mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <i class="fas fa-user"></i>
+              </span>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Name"
+              required
+            />
+          </div>
+
+          <div class="input-group input-group-lg mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <i class="fas fa-envelope"></i>
+              </span>
+            </div>
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Email"
+              required
+            />
+          </div>
+
+          <div class="input-group input-group-lg mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <i class="fas fa-pencil-alt"></i>
+              </span>
+            </div>
+            <textarea
+              class="form-control"
+              placeholder="Message"
+              rows="20"
+              required
+            ></textarea>
+          </div>
+
+          <input
+            type="submit"
+            value="Submit"
+            class="btn btn-primary btn-block btn-lg"
+          />
+        </form>
+      </div>
+
+      <div class="col-lg-3 align-self-center">
+        <img src="{%static 'img/logo.jpg'%}" alt="" class="img-fluid" />
+      </div>
+    </div>
+  </div>
+</section>
+{%endblock%}
