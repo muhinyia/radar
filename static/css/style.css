@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .navbar .nav-link {
   font-size: 16px;
   text-transform: uppercase;
